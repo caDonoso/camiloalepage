@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.block-style {
+  height: 600px;
+  color: white;
+}
+
+.footer-style {
+  height: 300px;
+  color: black;
+}
+
+.block-1 {
+  background-color: rgb(54, 54, 54);
+}
+
+.block-2 {
+  background-color: rgb(105, 105, 105);
+}
+
+.block-3 {
+  background-color: rgb(148, 148, 148);
+}
