@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@researchgate/react-intersection-observer": "^1.0.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^3.4.1",
+    "gsap": "^3.2.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-lorem-ipsum": "^1.4.4",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.0",
+    "react-scroll": "^1.7.16",
+    "react-use": "^13.27.0",
     "redux": "^4.0.5"
   },
   "scripts": {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Navbar extends React.Component {
   render() {
@@ -11,13 +12,40 @@ class Navbar extends React.Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#block-1">titulo</a>
+              <Link
+                className="nav-link"
+                href="#block-1"
+                activeClass="active"
+                to="block-1"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}>bloque 1
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#block-2">descripcion</a>
+              <Link
+                href="#block-2"
+                className="nav-link" 
+                activeClass="active"
+                to="block-2"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}>bloque 2
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#block-3">quienes somos</a>
+              <Link
+                href="#block-1"
+                className="nav-link" 
+                activeClass="active"
+                to="block-3"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}>bloque 3
+              </Link>
             </li>
           </ul>
         </div>
