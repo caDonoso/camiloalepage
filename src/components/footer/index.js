@@ -1,11 +1,9 @@
 import React from 'react'
 
-class Footer extends React.Component {
-  render() {
-    return (<div className="footer-style">
-      <h1> Footer </h1>
-    </div>);
-  }
+function Footer(){
+  return (
+    <h1> Footer </h1>
+  )
 }
 
 export default Footer;

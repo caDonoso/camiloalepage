@@ -1,91 +1,25 @@
-.App {
-  text-align: center;
+.my-container{
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  ". . search . ."
+  ". birds birds birds ."
+  "footer footer footer footer footer";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbar{
+  grid-area: navbar;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#search{
+  grid-area: search;
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#birds{
+  grid-area: birds;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.block-style {
-  height: 600px;
-  color: white;
-}
-
-.footer-style {
-  height: 500px;
-  color: black;
-}
-
-.header-style {
-  height: 300px;
-  color: black;
-}
-
-.block-1 {
-  background-color: rgb(54, 54, 54);
-}
-
-.block-2 {
-  background-color: rgb(105, 105, 105);
-}
-
-.block-3 {
-  background-color: rgb(148, 148, 148);
-}
-
-.footer {
-  
-}
-
-.fade-in-section-left {
-  opacity: 0;
-  transform: translateX(-70vh);
-  visibility: hidden;
-  transition: opacity 0.3s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section-right {
-  opacity: 0;
-  transform: translateX(70vh);
-  visibility: hidden;
-  transition: opacity 0.3s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
+#footer{
+  grid-area: footer;
 }
